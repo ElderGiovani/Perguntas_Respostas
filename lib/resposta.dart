@@ -11,13 +11,11 @@ class Resposta extends StatelessWidget {
     return SizedBox(
       width: double.infinity,
       child: Padding(
-        padding: const EdgeInsets.all(8.0),
+        padding: const EdgeInsets.all(12.0),
         child: ElevatedButton(
-          style: ButtonStyle(
-            backgroundColor: MaterialStateProperty.all<Color>(Colors
-                .blue), // Cor de fundo quando o botão está no estado padrão
-            foregroundColor: MaterialStateProperty.all<Color>(
-                Colors.white), // Cor do texto do botão
+          style: ElevatedButton.styleFrom(
+            backgroundColor: const Color.fromARGB(255, 33, 37, 243),
+            foregroundColor: Colors.white,
           ),
           onPressed: quandoSelecionado,
           child: Text(texto),
